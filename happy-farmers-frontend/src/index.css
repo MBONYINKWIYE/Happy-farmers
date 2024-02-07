@@ -1,0 +1,505 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family:  'Poppins', sans-serif;
+  background-color: rgb(188, 188, 188);
+}
+/* navbar codes */
+
+
+
+.all-nav-contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: grey;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-list {
+  text-align: center; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  margin-left: 100px;
+  margin-right: -100px;
+}
+
+.nav-list ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list ul li {
+  display: inline-block; 
+  margin-right: 20px; 
+}
+
+.nav-list ul li:last-child {
+  margin-right: 0; 
+}
+
+.nav-list ul li a {
+  text-decoration: none; 
+  color: white;
+}
+.nav-btn button{
+  display: flex; 
+  justify-content:right; 
+  border: 1px solid white;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: -100px;
+  background-color: rgba(255, 255, 255, 0.068);
+}
+
+.nav-cart-icon{
+  margin-right: 50px;
+  font-size: 30px;
+}
+
+
+/*body codes                   */
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 800px;
+  background-image: url(images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body-contents {
+  text-align: center;
+  padding: 50px;
+}
+
+.body-contents h1 {
+  margin-bottom: 10px; 
+  font-size: 60px;
+  color: white;
+}
+.body-contents b{
+  color: rgb(119, 119, 119);
+}
+.body-contents button {
+  border: 1px solid white;
+  padding: 10px 40px;
+  color: white;
+  margin-top: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.242);
+}
+@media (max-width: 768px) {
+  .container{
+    height: 500px;
+  }
+  .body-contents h1 { 
+    font-size: 30px;
+    color: white;
+  }
+  .body-contents button {
+    font-size: 10px;
+    width: 70px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+}
+
+
+
+
+
+/* body 2 code        */
+
+.bodytwo-container {
+  justify-content: space-around;
+  margin: 100px 50px 100px 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  height: 100%;
+}
+
+
+.bodytwo-subcontainer{
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  background-color: #b30000;
+  text-align: center;
+  height: 100%;
+  text-align: left;
+}
+.bodytwo-container h2 {
+  margin-bottom: 30px;
+}
+.bodytwo-container button {
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+/* Media queries for responsiveness */
+@media(max-width: 768px) {
+  .bodytwo-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+   .bodytwo-container.bodytwo-subcontainer{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  .bodytwo-container button {
+     width: 100%;
+  }
+  .bodytwo-container h2 {
+    text-align: center;
+  }
+}
+
+
+
+
+.wwa{
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  background: url(images/phoenix-han-ARCaazwh4xw-unsplash.jpg);
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  /* padding: 0px 50px 0px 50px; */
+}
+.wwa-container {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  text-align: left; 
+  height: 100vh; 
+  line-height: 30px;
+}
+.bodythree-container{
+  color: rgb(69, 69, 69);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  margin: 10px 0px 100px 0px;
+}
+.bodythree-subcontainer{
+  flex: 1;
+  padding: 20px;
+  margin: 10px 50px;
+  background-color: #b30000;
+  text-align: center;
+  height: 400px;
+  text-align: left;
+}
+
+.body3-long-para{
+  margin: 0px 50px 0px 50px;
+  color: rgb(69, 69, 69);
+  text-align: left;
+}
+
+.wwa h4{
+  font-size: 20px;
+  margin: 0px 50px;
+}
+.wwa p{
+  color: white;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .bodythree-container{
+    color: rgb(69, 69, 69);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .body3-long-para{
+    text-align: center;
+  }
+  .wwa h4{
+    font-size: 15px;
+  }
+  .wwa p{
+    color: white;
+    font-size: 15px;
+  }
+}
+/*            our fresh mushrooms                 */
+
+.ofm p, h4, h1, h6{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px 50px 20px 50px;
+  text-align: center;
+}
+.three-containers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  margin: 10px 50px 100px 50px;
+}
+
+.box {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  background-color: #b30000;
+  text-align: center;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .three-containers {
+      flex-direction: column;
+  }
+  .box{
+    width: 300px;
+    height: 500px;
+  }
+}
+
+
+
+
+
+
+/*         form codes            */
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:100px 0px 100px 0px;
+}
+.sub-form {
+  padding: 30px 50px ;
+  border-radius: 10px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+}
+.labels label {
+  display: block; 
+}
+
+
+
+.sub-form input,
+textarea {
+  outline: none;
+  width: 300px;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px; 
+  box-sizing: border-box; 
+}
+
+.sub-form textarea {
+  height: 150px;
+}
+
+.sub-form button {
+  background-color: #8d8d8d73; 
+  color: #fff;
+  padding: 10px 20px; 
+  border: 1px solid white; 
+  border-radius: 10px;
+  cursor: pointer; 
+}
+
+.sub-form button:hover {
+  background-color: #8d8d8dec;
+}
+@media (max-width: 768px) {
+  .sub-form {
+    padding: 30px 50px ;
+    border-radius: 10px;
+    background-color: grey;
+    width: 200px;
+  }
+  .sub-form input,
+  textarea {
+    outline: none;
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px; 
+    box-sizing: border-box; 
+  }
+  .sub-form textarea {
+    height: 100px;
+  }
+  .labels label {
+    font-size: 15px; 
+  }
+}
+
+
+/* Style the dropdown button */
+.dropbtn {
+  background-color:transparent;
+  color: white;
+  padding: 16px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+.dropbtn:hover{
+  background-color: transparent;
+  color: grey;
+}
+.nav-list a:hover{
+  color: grey;
+  transition: .5s;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.125);
+ 
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+   padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: grey;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: .5s;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+
+
+/*       vendor  code         */
+
+.vendor{
+  margin-left: 50px;
+}
+.vendor h1{
+  margin-bottom: 40px;
+}
+.vendor p{
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+
+
+.footer-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+  height: 200px;
+}
+.footer-subcontainer{
+   width: 100%;
+}
+.footer-subcontainer input{
+  width: 150px;
+  border: none;
+  border-radius: 50px;
+  height: 35px;
+  padding: 0px 20px;
+  /* margin-right: 10px; */
+}
+.footer-subcontainer button{
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(94, 94, 94);
+  height: 35px;
+  padding: 0px 20px;
+ 
+}
+.footer-subcontainer par{
+  margin-top: 20px;
+}
+.socialmedia-icons{
+  margin: 20px 0 20px 0;
+  padding-right: 20px;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      height: 100%;
+      font-size: 10px;
+  }
+  .footer-subcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px;
+    line-height: 5px;
+  }
+  .footer-subcontainer button{
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(94, 94, 94);
+    width: 290px;
+    margin:10px 0px 30px 0px;
+  }
+  .footer-subcontainer input{
+    height: 35px;
+    width: 250px;
+  }
+  /* body media queries */
+  .socialmedia-icons{
+    margin: 20px 0 20px 0;
+    padding-right: 0px;
+    font-size: 25px;
+  }
+}
